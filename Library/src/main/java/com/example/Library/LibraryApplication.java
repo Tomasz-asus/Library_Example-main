@@ -25,7 +25,6 @@ public class LibraryApplication {
 	@Autowired
 	private LibraryManager libraryManager;
 
-
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryApplication.class, args);
 	}
