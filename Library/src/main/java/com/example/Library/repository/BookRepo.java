@@ -14,12 +14,12 @@ public class BookRepo {
 
     public Optional<Book> getNameBook(String nameBook){
         return bookList.stream()
-                .filter(book ->book.getTitleBook().equals(nameBook))
+                .filter(book ->book.getTitle().equals(nameBook))
                 .findFirst();
     }
 
     public static void addBook(String nameBook, String authorBook) {
-        bookList.add(new Book(nameBook, authorBook));
+        bookList.add(new Book());
     }
 
     public List<Book> getBookList() {

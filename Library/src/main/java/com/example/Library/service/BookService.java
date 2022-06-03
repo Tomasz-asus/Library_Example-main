@@ -17,7 +17,7 @@ public class BookService {
     }
 
     public void addBook(String authorBook, String nameBook) {
-        Book book = new Book(authorBook, nameBook);
+        Book book = new Book();
     }
     public Book getBook(String nameBook) {
         bookRepo.getNameBook(nameBook).orElseThrow(() ->new IllegalArgumentException("ni ma"));

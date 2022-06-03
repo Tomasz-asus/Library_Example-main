@@ -8,24 +8,24 @@ import java.util.List;
 
 @Component
 public class Book {
-    private final String titleBook;
-    private final String authorBook;
+    private final String title;
+    private final String lastName;
 
     private final List<Book> bookList = new ArrayList<>();
 
     private final List<Book> borrowBook = new ArrayList<>();
 
-    public Book(String nameBook, String authorBook) {
-        this.titleBook = nameBook;
-        this.authorBook = authorBook;
+    public Book() {
+        this.title = title;
+        this.lastName = lastName;
     }
 
-    public String getTitleBook() {
-        return titleBook;
+    public String getTitle() {
+        return title;
     }
 
-    public String getAuthorBook() {
-        return authorBook;
+    public String getLastName() {
+        return lastName;
     }
 
     public void addBook(Book book) {this.bookList.add(book);}

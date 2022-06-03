@@ -6,16 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class Customer {
+public class Customer extends Book{
 
     private final String nameCustomer;
-    private final int IdCustomer;
+    private final int idCustomer;
 
     private final List<Customer> customerList = new ArrayList<>();
 
     public Customer(String nameCustomer, int idCustomer) {
+        super();
         this.nameCustomer = nameCustomer;
-        IdCustomer = idCustomer;
+        this.idCustomer = idCustomer;
     }
 
     public String getNameCustomer() {
@@ -23,7 +24,7 @@ public class Customer {
     }
 
     public int getIdCustomer() {
-        return IdCustomer;
+        return idCustomer;
     }
 
     public void addCustomer(Customer customer){this.customerList.add(customer);}
